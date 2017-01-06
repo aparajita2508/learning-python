@@ -12,3 +12,6 @@ print "Actually that's not too heavy"
 print "She's got %s eyes and %s hair" %(my_eyes, my_hair)
 print "Her teeth %s depends upon the coffee" %My_teeth
 print "If I add %d %d %d i will get %d" %(my_age, my_height, my_weight, my_age+my_height+my_weight)
+while True:
+	for i in ["/","-","|","\\","|"]:
+		print "%s\r" % i,
