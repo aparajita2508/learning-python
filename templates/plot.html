@@ -1,0 +1,15 @@
+{%extends "layout.html"%}
+{%block content%}
+<body style="background-color:ivory;"></body>
+<link rel="stylesheet" href={{cdn_css | safe}} type="text/css" />
+<script type="text/javascript" src={{cdn_js | safe}}></script>
+
+<div class="plot">
+    <h1 >Stock CandleStick chart</h1>
+   <p><b>Here is the financial report of {{stock_name_for_label}} stock</b></p>
+    <p style = "color: skyblue;">The candles in light blue color represent the <mark>Increase</mark> in stock market</p>
+    <p style = "color: red;">The candles in red color represent the <mark>Decrease</mark> in stock market </p>
+</div>
+{{script1 | safe}}
+{{div1 | safe}}
+{%endblock%}

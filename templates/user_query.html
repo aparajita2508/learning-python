@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Stock Finance Report</title>
+</head>
+<body background="/static/a3.png"></body>
+<body style="background-color:powderblue;">
+
+
+    <b><form action = "{{ url_for('plot_stock_bokeh') }}" method = "POST">
+        <table>
+            <H2 style="font-family:Georgia; font-size:150%; text-align:left;"><font color="crimson">Dear user please enter the desired and valid Company's <mark>stock name</mark>, <mark>start date</mark>, and <mark>end date</mark>  into the specified field for getting the stock report :-</font></i>
+            </H2>
+            <tr>
+                <td><b style="font-size:120%; font-family:Georgia;"><i>Stock Name</i></b></td>
+                <td><input style="font-size:160%;background-color:Ivory;" type = "text" name = "StockName", size="17px"/></td>
+            </tr>
+            <tr>
+                <td><b style="font-size:120%; font-family:Georgia;"><i>Start Date</i></b> </td>
+                <td><input style="font-size:160%;background-color:Ivory;" type = "date" value="yyyy-mm-dd" data-date-inline-picker="true" name = "StartDate"/></td>
+            </tr>
+            <tr>
+                <td><b style="font-size:120%; font-family:Georgia;"><i>End Date</i></b> </td>
+                <td><input style="font-size:160%;background-color:Ivory;" type = "date" value="yyyy-mm-dd" data-date-inline-picker="true" name = "EndDate"/></td>
+            </tr>
+        </table>
+        <p>
+        <input type = "submit" value = "Show!" style="-webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  padding: 0px;background-color:Gainsboro;border-style:groove;
+  height: 50px;width:100px;font-size:20px;font-family:Georgia;"/></p>
+
+    </form></b>
+
+
+   </body>
+</html>
